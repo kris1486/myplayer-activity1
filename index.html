@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPlayer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Heebo&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- start of music player background theme -->
+    <div class="container-fluid" id="bg-theme">
+       <!-- start of music player box -->
+       <div id="music-player">
+           <!-- music player content -->
+           <!-- start track details -->
+            <div id="album-cover">
+                <img src="assets/images/mass.jpg" alt="">
+            </div>
+            <div id="song-details">
+                <audio id="audio" src="assets/audio/Because He Lives (Amen)  Because He Lives.mp3">
+                    
+                </audio>
+                <h3 id="song-title">Because He Lives</h3>
+                <h5 id="artist-singer">Mass Anthem</h5>
+            </div>
+            <!-- end track details -->
+                
+            <!-- start of music player navigation control -->
+            <div id="seekbar">
+                <div id="song-duration">
+                    <span id="current-time">0:00</span>
+                    <span id="total-time">5:00</span>
+                </div>
+                <input type="range" id="seek-slider" min="0" max="100" value="0">
+            </div>
+            <div id="control-button">
+                <span id="previous-rewind">
+                    <img src="assets/images/previous-back-direction-svgrepo-com.svg" alt="previous-back-button">
+                </span>
+                <div id="play-pause">
+                    <img id="play" src="assets/images/play-player-music-svgrepo-com.svg" alt="play-button">
+                    <img id="pause" src="assets/images/pause-stop-control-svgrepo-com.svg" alt="pause-button" id="pause">
+                </div>
+                <div id="next-forward">
+                    <img src="assets/images/next-navigation-music-svgrepo-com.svg" alt="next-forward-button">
+                </div>
+            </div>
+            <div class="volume-control">
+                <label for="volume-slider">
+                    <img id="volume-down" src="assets/images/volume-down.png" alt="">
+                </label>
+                <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5">
+                <label for="volume-slider">
+                    <img id="volume-up" src="assets/images/high-volume.png" alt="">
+                </label>
+            </div>
+
+                <!--end of music player navigation control -->
+        </div>
+        <!-- end of music player box -->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
